@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import TipsCard from "./components/TipsCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col gap-4 justify-center items-center p-4 md:max-w-2xl md:mx-auto">
+      <div className="text-4xl">
+        <h1 className="font-bold text-very-dark-cyan tracking-widest">
+          SPLI
+        </h1>
+        <h1 className="font-bold text-very-dark-cyan tracking-widest">
+          TTER
+        </h1>
+      </div>
+      <TipsCard />
     </div>
   );
 }
